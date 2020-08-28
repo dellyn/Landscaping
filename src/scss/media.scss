@@ -9,14 +9,8 @@
   //   Works
   .works {
     .block {
-      .block-img-stand {
-      }
-      .block-img-big {
-      }
       .col-stand {
         flex-basis: fill;
-        img {
-        }
       }
     }
   }
@@ -127,8 +121,6 @@
         li {
           border-bottom: 1px solid #6f6f6f;
         }
-        li:last-child {
-        }
       }
       #lay {
         display: block;
@@ -151,9 +143,6 @@
   .story {
     &-title {
       text-align: center;
-    }
-    &-illustration {
-      //   margin-right: 10px;
     }
   }
   // Footer

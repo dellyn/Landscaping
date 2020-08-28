@@ -153,7 +153,7 @@ img {
       height: 100%;
       display: block;
       position: absolute;
-      left: 40px;
+      left: 37px;
       top: 30px;
       background: $green;
       opacity: 0.1;
@@ -234,8 +234,8 @@ img {
     &-stars {
       img {
         pointer-events: none;
-        width: 20px;
         display: inline;
+        width: 20px;
         margin: 0 2px;
       }
     }
@@ -343,6 +343,8 @@ img {
       outline: none;
       border-bottom: 1px solid $paragraph;
       transition: all 0.2s ease-in-out;
+      -webkit-box-shadow: inset 0 0 0 50px $card-hover;
+      -webkit-text-fill-color: #fff;
       &::placeholder {
         color: #fff;
       }

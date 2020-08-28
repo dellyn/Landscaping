@@ -22,7 +22,7 @@ module.exports = {
     filename: `${PATHS.assets}js/[name].js`,
     // path: path.resolve(__dirname, './dist'),
     path: PATHS.dist,
-    publicPath: "/",
+    // publicPath: "/",
   },
   module: {
     rules: [

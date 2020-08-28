@@ -27,7 +27,7 @@ function toggleMenu() {
   menuBg.classList.toggle("fs");
   menuItems.classList.toggle("fs");
   menu.textContent == "☰" ? (menu.textContent = "✕") : (menu.textContent = "☰");
-  lay.classList.remove("dn");
+  lay.classList.toggle("dn");
 
   if (menu.classList.contains("fs")) {
     body.classList.add("overflow-h");
@@ -37,6 +37,6 @@ function toggleMenu() {
 }
 menu.addEventListener("click", toggleMenu);
 document.getElementById("lay").onclick = function () {
-  this.classList.add("dn");
+  // this.classList.add("dn");
   toggleMenu();
 };
