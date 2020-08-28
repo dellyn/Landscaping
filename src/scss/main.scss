@@ -106,9 +106,11 @@ img {
     margin: 24px 0px 0px 0px;
   }
 }
-
+#lay {
+  margin: 0 !important;
+}
 .header {
-  background: url("/assets/img/header_bg.png");
+  background: url("/assets/img/header_bg.png") center top;
   background-size: cover;
   padding: 225px 0px 203px 0px;
   .block {
@@ -284,6 +286,7 @@ img {
     .block-img-stand {
       width: 48%;
       // max-width: 305px;
+      height: auto;
     }
     .block-img-big {
       width: 49%;
