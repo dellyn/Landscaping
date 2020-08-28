@@ -55,37 +55,26 @@
       max-width: none;
     }
   }
-
-  //   Footer
-  .footer {
-    padding-bottom: 70px;
-    // &-info {
-    //   //   flex-direction: column;
-    //   align-items: baseline;
-    //   //   justify-content: center;
-    //   margin-top: 40px;
-    //   &-contacts {
-    //     margin: 20px 0px 0px 30px;
-    //   }
-    // }
-    &-social {
-      margin-top: 40px;
-      justify-content: center;
-    }
+  // Map
+  .map {
+    width: 100%;
+    height: 90vh;
+    max-height: 800px;
+    background: url("/assets/img/map.png") no-repeat center top;
+    background-size: cover;
   }
+  //   Footer
 }
 @media (max-width: 960px) {
+  //
   .menu {
     position: fixed;
     width: 100%;
     background-color: #fff;
     padding: 0px 0px;
     z-index: 2;
-    .logo {
-      &-lay {
-      }
-    }
-    .menu-item {
+
+    &-toggle {
       display: block !important;
       position: fixed;
       width: 50px;
@@ -98,8 +87,8 @@
       z-index: 1000;
     }
 
-    .menu-burger {
-      @extend .menu-item;
+    &-burger {
+      @extend .menu-toggle;
       color: #000;
       font-size: 35px;
       cursor: pointer;
@@ -109,44 +98,43 @@
         transform: rotate(-180deg) translateY(-2px);
       }
     }
-    .menu-items {
+    &-items {
+      transition: all 0.3s ease;
       position: fixed;
       z-index: 9;
-      top: -300px;
+      top: -400px;
+      opacity: 0;
       left: 0;
-      height: 0vh;
-      transition: all 0.3s ease-in-out;
+      height: auto;
       width: 100%;
       display: flex;
       flex-direction: column;
       li {
-        transition: all 0.1s ease;
-
-        opacity: 0;
-        display: none;
-        margin-top: 0px;
+        background-color: #fff;
         width: 100%;
+        margin: 0 !important;
         z-index: 2;
+        padding-left: 15px;
+        a {
+          padding: 13px 0px 13px 40px;
+        }
       }
 
       &.fs {
-        padding-top: 80px;
+        padding-top: 75px;
         top: 0;
-        // padding-top: 80px;
-        background-color: #fff;
-        height: auto;
+        opacity: 1;
         li {
-          display: block;
-          opacity: 1;
-          margin: 0;
           border-bottom: 1px solid #6f6f6f;
-          a {
-            padding: 13px 0px 13px 40px;
-          }
         }
-        li:nth-child(2) {
-          transition: all 0.3s ease;
+        li:last-child {
         }
+      }
+      #lay {
+        display: block;
+        height: 100vh;
+        width: 100%;
+        background-color: transparent;
       }
     }
     hr {
@@ -168,8 +156,39 @@
       //   margin-right: 10px;
     }
   }
+  // Footer
+  .footer {
+    padding-bottom: 70px;
+
+    &-social {
+      margin-top: 37px;
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 850px) {
+  .works {
+    .block {
+      .col-stand {
+        width: 100%;
+      }
+      img {
+        margin-top: 4vw;
+      }
+      .block-img-big,
+      .block-img-medium {
+        width: 100%;
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
+  // Header
+  .header {
+    .block {
+      font-size: 14px;
+    }
+  }
   // Service
   .service {
     &-info {
@@ -198,8 +217,37 @@
 }
 @media (max-width: 540px) {
   .menu {
+    padding: 8px 0px;
+  }
+  // Header
+  .header {
+    .block {
+      padding: 60px 30px;
+      font-size: 13px;
+
+      &-title {
+        font-size: 2.8em;
+      }
+      &-lay {
+        .btn {
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+  .menu {
     .logo {
       font-size: 1.1em;
+    }
+  }
+  // Story
+  .story {
+    &-illustration {
+      max-width: 85%;
+      &-layout {
+        left: 20px;
+        top: 20px;
+      }
     }
   }
   // Footer
@@ -213,3 +261,47 @@
     }
   }
 }
+@media (max-width: 390px) {
+  .menu {
+    &-toggle {
+      // font-size: 25px;
+      right: 12px;
+      top: 7px;
+      transform: scale(0.9);
+    }
+  }
+  // Service
+  .service {
+    &-info {
+      .block {
+        padding: 0;
+        ul {
+          padding: 0 15px;
+        }
+        &-images {
+          img {
+            height: 45px;
+          }
+        }
+      }
+    }
+  }
+  h2 {
+    font-size: 2.5em;
+  }
+  .header {
+    .btn {
+      padding: 12px 35px;
+    }
+  }
+  // Contact
+  .contact {
+    &-form {
+      p {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+//
