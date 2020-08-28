@@ -274,6 +274,7 @@ img {
 }
 .works .column-stand img {
   width: 50%;
+  height: 50%;
   padding: 15px;
 }
 .works .column-big {

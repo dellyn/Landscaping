@@ -279,6 +279,7 @@ img {
     flex-wrap: wrap;
     &-stand {
       width: 50%;
+      height: 50%;
       display: flex;
       flex-wrap: wrap;
       img {
@@ -293,8 +294,7 @@ img {
         padding: 12px;
       }
     }
-    &-bottom{
-      
+    &-bottom {
     }
   }
   //   .col-stand {
