@@ -294,12 +294,12 @@ img {
         padding: 12px;
       }
     }
-    .column-stand-100 {
+    &-stand-100 {
       display: flex;
       flex-wrap: wrap;
       img {
         width: 50%;
-        height: 50%;
+        height: 100%;
       }
     }
   }

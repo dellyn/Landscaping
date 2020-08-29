@@ -155,6 +155,11 @@
       > div {
         width: 100%;
       }
+      &-stand-100 {
+        img {
+          height: 50% !important;
+        }
+      }
     }
   }
 }
