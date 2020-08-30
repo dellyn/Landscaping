@@ -69,7 +69,6 @@ img {
   max-width: 1315px;
 }
 
-// Header
 .menu {
   padding: 35px 0px 42px 0px;
   // min-height: 70px;
@@ -115,7 +114,7 @@ img {
   padding: 225px 0px 203px 0px;
   .block {
     // width: 559px;
-    padding: 114px 80px;
+    padding: 114px 70px;
     background: #ffffff;
     box-shadow: 30px 40px 100px rgba(0, 0, 0, 0.0666044);
     border-radius: 30px;
@@ -218,13 +217,18 @@ img {
 }
 // Reviews
 .reviews {
-  padding: 279px 0px;
+  padding: 279px 0px 219px 0px;
+  background: url("/assets/img/reviews_bg.png") no-repeat 90% 10%;
+  &-title {
+    margin-bottom: 40px;
+  }
   .card {
     border: none;
     border-radius: 20px;
     padding: 63px 42px;
-    // max-width: 397px;
+    max-width: 397px;
     height: 100%;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
     span {
       color: $paragraph;
       margin-bottom: 59px;
@@ -272,7 +276,10 @@ img {
 }
 // Works
 .works {
-  padding: 0px 0px 134px 0px;
+  padding: 60px 0px 134px 0px;
+  &-title {
+    margin: 0px auto 40px auto;
+  }
   .column {
     width: 100%;
     display: flex;
@@ -281,10 +288,14 @@ img {
       width: 50%;
       display: flex;
       flex-wrap: wrap;
-      img {
+      .img {
         width: 50%;
         height: 50%;
         padding: 15px;
+        img {
+          border-radius: 20px;
+          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.128841);
+        }
       }
     }
     &-big {
@@ -293,12 +304,14 @@ img {
 
       img {
         width: 100%;
+        border-radius: 20px;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.128841);
       }
     }
     &-stand-100 {
       display: flex;
       flex-wrap: wrap;
-      img {
+      .img {
         width: 50%;
         height: 100%;
       }
@@ -327,22 +340,35 @@ img {
 // Quote
 .quote {
   background-color: $green;
-  padding: 183px 0px 90px 0px;
+  padding: 95px 0px 95px 0px;
+  &-title {
+    display: block;
+    margin-bottom: 40px;
+    color: #fff;
+  }
   &-btn {
     background-color: #fff;
     color: $green;
+    &:hover {
+      color: $green;
+    }
   }
 }
 // Contact Us
 .contact {
+  color: #fff;
+
   padding: 180px 0px;
   background-color: $card-hover;
+
   &-title {
     // text-align: center;
-    color: #fff;
-    margin: 0px auto 180px auto;
+    margin: 0px auto 40px auto;
+  }
+  &-paragraph {
   }
   &-form {
+    margin-top: 180px;
     p {
       margin-top: 48px;
       display: flex;
