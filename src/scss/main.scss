@@ -228,7 +228,7 @@ img {
     padding: 63px 42px;
     max-width: 397px;
     height: 100%;
-    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15);
+    box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.09);
     span {
       color: $paragraph;
       margin-bottom: 59px;
@@ -294,7 +294,7 @@ img {
         padding: 15px;
         img {
           border-radius: 20px;
-          box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.128841);
+          box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.19841);
         }
       }
     }
@@ -305,7 +305,7 @@ img {
       img {
         width: 100%;
         border-radius: 20px;
-        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.128841);
+        box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.19841);
       }
     }
     &-stand-100 {
